@@ -1,0 +1,110 @@
+.hidden{
+    display: none;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none
+}
+
+img{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;   
+    -webkit-user-drag: none;
+}
+
+.todo-list{
+    text-align: right;
+    border-radius: 1vw;
+    padding: 1vw;
+    position: fixed;
+    right: 1vw;
+    bottom: 1vh;
+    color: white;
+    font-weight: 900;
+    font-size: 1.5vw;
+    list-style: none;
+}
+.todo-list button{
+    width: 1.5vw;
+    height: 1.5vw;
+    text-align: center;
+    line-height:1.5vw;
+    margin: 1vw;
+    background-color: transparent;
+    font-size: 1.5vw;
+    font-weight: 900;
+    color: white;
+}
+
+.todo-list button:hover{
+    cursor: pointer;
+}
+.clock{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    font-weight: 900;
+    color: white;
+    text-shadow: black 2px 2px 2px,black 4px 4px 4px,black 8px 8px 8px;
+    padding: 0 1vw;
+}
+.clock-re{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    font-weight: 900;
+    color: white;
+    padding: 0 1vw;
+    -webkit-box-reflect: below -1vw linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.5));
+}
+#greeting{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    color: white;
+    border-radius: 1vw;
+    padding: 0 1vw;
+    text-shadow: black 2px 2px 2px,black 4px 4px 4px,black 8px 8px 8px;
+}
+
+#todo-form{
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%,-50%);
+    font-size: 5vw;
+    width: 20vw;
+    text-align: center;
+    line-height: 0;
+    background-color: transparent;
+    border-bottom: 0.5vw white solid;
+    box-shadow:    0px 2px 2px -5px black, 0px 4px 4px -5px black, 0px 8px 8px -5px black;
+}
+.inputBox{
+    outline: none;
+    text-align: center;
+}
+.inputBox{
+    width: 18vw;
+    height: 5vh;
+    background-color: transparent;
+    color: white;
+    font-size: 2vw;
+    border: none;
+}

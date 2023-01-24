@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sources/style.css" />
+    <title>Momentum</title>
+  </head>
+  <body>
+    <form id="login-form" class="hidden">
+      <input
+        required
+        maxlength="5"
+        type="text"
+        placeholder="what is you name?"
+        autofocus
+      />
+      <button>Log In</button>
+    </form>
+    <h1 id="greeting" class="hidden"></h1>
+    <div class="clock"></div>
+    <div class="clock-re"></div>
+    <img id="BG" alt="배경" />
+
+    <form id="todo-form">
+      <input class="inputBox" type="text" required />
+    </form>
+    <ul class="todo-list"></ul>
+
+    <script src="sources/login.js"></script>
+    <script src="sources/clock.js"></script>
+    <script src="sources/BG.js"></script>
+    <script src="sources/todo.js"></script>
+  </body>
+</html>
